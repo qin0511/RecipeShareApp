@@ -7,7 +7,7 @@
     "node": "15.7.0"
   },
   "scripts": {
-    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "start": "node ./bin/www",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [
