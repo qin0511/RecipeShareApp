@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register page" />
+  <meta name="author" content="Wenzhu & Xiaoyan" />
+  <title>ShareMyRecipe</title>
+   <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="title"><h1>Welcome to ShareMyRecipe</h1></div>
+    <div class="row">
+      <div class="col-4 box border">
+        <form id="formRegist">
+          <div class="mb-2">
+            <label for="InputUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" name="username" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="InputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="pwd">
+          </div>
+          <div id="error" class="alert-danger" role="alert" style="margin-bottom: 4px;"></div>
+          <div class="d-grid gap-2 mx-auto center-font"><button type="submit" class="btn btn-success">Sign Up</button></div>
+        </form>
+       <hr>
+          <div class="center-font">
+            <p class="secondfont">Already have an account?</p>
+            <a class="btn btn-primary secondfont" href="index.html" role="button">Sign In</a></div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer section -->
+  <footer>
+    <div>
+      <p> Wenzhu Chen & Xiaoyan Qin &copy; 2021</p>
+    </div>
+  </footer>
+
+   <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascripts/frontend.js"></script>
+
+</body>
+</html>

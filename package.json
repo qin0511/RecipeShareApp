@@ -1,0 +1,35 @@
+{
+  "name": "recipeapp",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "npm": "7.5.0",
+    "node": "15.7.0"
+  },
+  "scripts": {
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [
+    "recipes"
+  ],
+  "author": "Wenzhu Chen & Xiaoyan Qin",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.6.4",
+    "morgan": "~1.9.1",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create Recipe page" />
+  <meta name="author" content="Xiaoyan & wenzhu" />
+  <title>Create Recipe Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./stylesheets/recipeStyle.css" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./viewRecipe.html">View Recipe List</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+          </ul>
+
+          <span id="logout">
+            Welcome <span id="username"></span>
+            <button class="btn-outline-success btn" onclick="location.href='/index.html'">logout</button>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- /nav -->
+
+    <div class="col-4">
+      <h2>Create a new Recipe</h2>
+      <div id="error" class="alert-danger" role="alert"></div>
+
+      <form id="formCreate" enctype="multipart/form-data" action="./createRecipe" method="post">
+        <label class="form-label">Title: <input class="form-control" type="text" name="title" /></label>
+        <br></br>
+        <label class="form-label">Materials Needed:
+          <input class="form-control" type="text" name="materials" /></label>
+        <label class="form-label">Steps:
+          <br></br>
+          <textarea name="content" rows="5" cols="50"></textarea>
+        </label>
+        <label class="form-label">Photo: <input class="form-control" type="file" name="image"
+            id="image-upload" /></label>
+        <button type="submit" class="btn btn-primary">Create</button>
+      </form>
+    </div>
+
+
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright
+        </div>
+        <div class="credits">
+          Designed by Xiaoyan & Wenzhu
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+  </div>
+  <!-- /continer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <script src="./javascripts/create.js"></script>
+</body>
+
+</html>
